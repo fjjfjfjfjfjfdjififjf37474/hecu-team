@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " II",
+    " IG",
+    " I "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "G": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "hecuteam:desert_eagle_laser",
+    "count": 1
+  }
+}

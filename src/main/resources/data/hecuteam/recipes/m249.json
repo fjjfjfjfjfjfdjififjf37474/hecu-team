@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IGI",
+    " W "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "G": {
+      "item": "minecraft:gunpowder"
+    },
+    "W": {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "result": {
+    "item": "hecuteam:m249",
+    "count": 1
+  }
+}

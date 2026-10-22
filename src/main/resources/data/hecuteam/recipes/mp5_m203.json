@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IGI",
+    " I "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "G": {
+      "item": "minecraft:gunpowder"
+    }
+  },
+  "result": {
+    "item": "hecuteam:mp5_m203",
+    "count": 1
+  }
+}

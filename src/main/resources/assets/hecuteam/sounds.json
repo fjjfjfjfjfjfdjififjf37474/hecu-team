@@ -1,0 +1,44 @@
+{
+  "weapon_pistol": {
+    "subtitle": "subtitles.hecuteam.weapon_pistol",
+    "sounds": [
+      "hecuteam:weapon_pistol"
+    ]
+  },
+  "weapon_auto": {
+    "subtitle": "subtitles.hecuteam.weapon_auto",
+    "sounds": [
+      "hecuteam:weapon_auto"
+    ]
+  },
+  "weapon_shotgun": {
+    "subtitle": "subtitles.hecuteam.weapon_shotgun",
+    "sounds": [
+      "hecuteam:weapon_shotgun"
+    ]
+  },
+  "weapon_reload_start": {
+    "subtitle": "subtitles.hecuteam.weapon_reload_start",
+    "sounds": [
+      "hecuteam:weapon_reload_start"
+    ]
+  },
+  "weapon_reload_end": {
+    "subtitle": "subtitles.hecuteam.weapon_reload_end",
+    "sounds": [
+      "hecuteam:weapon_reload_end"
+    ]
+  },
+  "weapon_empty": {
+    "subtitle": "subtitles.hecuteam.weapon_empty",
+    "sounds": [
+      "hecuteam:weapon_empty"
+    ]
+  },
+  "grenade_launcher": {
+    "subtitle": "subtitles.hecuteam.grenade_launcher",
+    "sounds": [
+      "hecuteam:grenade_launcher"
+    ]
+  }
+}

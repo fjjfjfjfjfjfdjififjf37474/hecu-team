@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_nugget"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "minecraft:copper_ingot"
+    }
+  ],
+  "result": {
+    "item": "hecuteam:spas12_shells",
+    "count": 8
+  }
+}

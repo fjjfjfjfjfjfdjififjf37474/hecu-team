@@ -1,0 +1,21 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+[[mods]]
+modId="hecuteam"
+version="1.0.0"
+displayName="HECU Team"
+authors="HECU Team contributors"
+description='''Adds HECU-inspired squads, weapons, and combat vehicles. Placeholder assets are included; game assets are not bundled.'''
+[[dependencies.hecuteam]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.hecuteam]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"

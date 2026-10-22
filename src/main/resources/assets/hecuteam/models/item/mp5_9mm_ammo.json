@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "hecuteam:item/mp5_9mm_ammo"
+  }
+}
