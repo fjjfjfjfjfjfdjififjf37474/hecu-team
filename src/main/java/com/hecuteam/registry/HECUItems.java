@@ -7,7 +7,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraft.world.item.SpawnEggItem;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -38,11 +38,20 @@ public class HECUItems {
     public static final RegistryObject<Item> EGG_H_APACHE = vehicleEgg("hostile_apache_spawn_egg", HECUEntities.HOSTILE_APACHE, 0x30382E, 0x777D69);
     public static final RegistryObject<Item> EGG_F_BRADLEY = vehicleEgg("friendly_bradley_spawn_egg", HECUEntities.FRIENDLY_BRADLEY, 0x4B5443, 0x777D69);
     public static final RegistryObject<Item> EGG_H_BRADLEY = vehicleEgg("hostile_bradley_spawn_egg", HECUEntities.HOSTILE_BRADLEY, 0x30382E, 0x777D69);
-    private static RegistryObject<Item> vehicleEgg(String name, RegistryObject<net.minecraft.world.entity.EntityType<com.hecuteam.entity.HecuVehicleEntity>> entity, int background, int spots) { return ITEMS.register(name, () -> new SpawnEggItem(entity.get(), background, spots, new Item.Properties())); }
-    private static RegistryObject<Item> egg(String name, RegistryObject<net.minecraft.world.entity.EntityType<com.hecuteam.entity.HecuSoldierEntity>> entity, int background, int spots) { return ITEMS.register(name, () -> new SpawnEggItem(entity.get(), background, spots, new Item.Properties())); }
+    private static RegistryObject<Item> vehicleEgg(
+        String name,
+        RegistryObject<net.minecraft.world.entity.EntityType<com.hecuteam.entity.HecuVehicleEntity>> entity,
+        int background,
+        int spots
+    private static RegistryObject<Item> egg(
+        String name,
+        RegistryObject<net.minecraft.world.entity.EntityType<com.hecuteam.entity.HecuSoldierEntity>> entity,
+        int background,
+        int spots
     private static RegistryObject<Item> ammo(String name) { return ITEMS.register(name, () -> new Item(new Item.Properties())); }
     private static RegistryObject<Item> gun(String name, int cap, float dmg, int cd, RegistryObject<Item> ammo, boolean shotgun, boolean gl, boolean laser) {
-        return ITEMS.register(name, () -> new FirearmItem(new Item.Properties().stacksTo(1), cap, dmg, cd, ammo::get, shotgun, gl, laser));
+        return ITEMS.register(name, () ->
+            new ForgeSpawnEggItem(entity, background, spots, new Item.Properties()));
     }
 
     @SubscribeEvent
