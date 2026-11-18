@@ -43,16 +43,20 @@ public class HECUItems {
         RegistryObject<net.minecraft.world.entity.EntityType<com.hecuteam.entity.HecuVehicleEntity>> entity,
         int background,
         int spots
-    private static RegistryObject<Item> egg(
+) {
+    return ITEMS.register(name, () ->
+            new ForgeSpawnEggItem(entity, background, spots, new Item.Properties()));
+}
+
+private static RegistryObject<Item> egg(
         String name,
         RegistryObject<net.minecraft.world.entity.EntityType<com.hecuteam.entity.HecuSoldierEntity>> entity,
         int background,
         int spots
-    private static RegistryObject<Item> ammo(String name) { return ITEMS.register(name, () -> new Item(new Item.Properties())); }
-    private static RegistryObject<Item> gun(String name, int cap, float dmg, int cd, RegistryObject<Item> ammo, boolean shotgun, boolean gl, boolean laser) {
-        return ITEMS.register(name, () ->
+) {
+    return ITEMS.register(name, () ->
             new ForgeSpawnEggItem(entity, background, spots, new Item.Properties()));
-    }
+}
 
     @SubscribeEvent
     public static void addToCreativeTab(BuildCreativeModeTabContentsEvent event) {
