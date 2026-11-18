@@ -57,7 +57,33 @@ private static RegistryObject<Item> egg(
     return ITEMS.register(name, () ->
             new ForgeSpawnEggItem(entity, background, spots, new Item.Properties()));
 }
+private static RegistryObject<Item> ammo(String name) {
+    return ITEMS.register(name, () -> new Item(new Item.Properties()));
+}
 
+private static RegistryObject<Item> gun(
+        String name,
+        int cap,
+        float dmg,
+        int cd,
+        RegistryObject<Item> ammo,
+        boolean shotgun,
+        boolean gl,
+        boolean laser
+) {
+    return ITEMS.register(name, () ->
+            new FirearmItem(
+                    new Item.Properties().stacksTo(1),
+                    cap,
+                    dmg,
+                    cd,
+                    ammo::get,
+                    shotgun,
+                    gl,
+                    laser
+            )
+    );
+}
     @SubscribeEvent
     public static void addToCreativeTab(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
