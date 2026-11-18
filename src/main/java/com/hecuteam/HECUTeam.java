@@ -11,10 +11,12 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 @Mod(HECUTeam.MODID)
 public class HECUTeam {
     public static final String MODID = "hecuteam";
+
     public HECUTeam() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-        HECUItems.ITEMS.register(bus);
+
         HECUEntities.ENTITY_TYPES.register(bus);
+        HECUItems.ITEMS.register(bus);
         HECUSounds.register(bus);
         HECUNetwork.register();
     }
